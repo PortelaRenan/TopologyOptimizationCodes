@@ -1,11 +1,3 @@
-% UNIVERSIDADE ESTADUAL DE CAMPINAS
-% FACULDADE DE ENGENHARIA MECANICA
-% METODOS DE OTIMIZACAO TOPOLOGICA EVOLUCIONARIA - IM437 J
-% ATIVIDADE 3
-%
-% DIPL. -ENG RENAN MIRANDA PORTELA
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %% cleaning
 
 clc; clear; close all
@@ -52,7 +44,7 @@ end
 % figure()
 % patch('Faces',inci(:,2:5),'Vertices',coord(:,2:3),'FaceColor','none')
 % axis equal
-% title('Otimiza��o Topol�gica Evolucion�ria')
+% title('Otimização Topológica Evolucionária')
 % ylabel('y')
 % xlabel('x')
 % chr = int2str(coord(:,1));
@@ -139,9 +131,9 @@ for i = 1:nel
         wi=1;
         wj=1;
         
-        Nfun=4; %N�mero de n�s do elemento
-        ke=zeros(2*Nfun); %Inicializa��o da matriz elementar
-        Bs=zeros(3,2*Nfun); %Inicializa��o da matriz de deforma��o
+        Nfun=4; %Nï¿½mero de nï¿½s do elemento
+        ke=zeros(2*Nfun); %Inicializaï¿½ï¿½o da matriz elementar
+        Bs=zeros(3,2*Nfun); %Inicializaï¿½ï¿½o da matriz de deformaï¿½ï¿½o
         
         for j=1:np
             xi=pxi(j);
@@ -155,7 +147,7 @@ for i = 1:nel
                 %Determinante do Jacobiano
                 detJ=det(J);
                 iJ=J^-1;
-                %Matriz de deforma��o Bs-s�lida
+                %Matriz de deformaï¿½ï¿½o Bs-sï¿½lida
                 p = 1:2:8; %vetor de 1 ate 8(
                 Bs(1,p)   = iJ(1,1)*dNxi + iJ(1,2)*dNeta;
                 Bs(2,p+1) = iJ(2,1)*dNxi + iJ(2,2)*dNeta;
@@ -333,19 +325,19 @@ u_max = u_max(count,1);
 
 figure()
 plot(count,u_max,'k')
-title('Deslocamento vs. itera��es')
-xlabel('Itera��es')
+title('Deslocamento vs. iterações')
+xlabel('Iterações')
 ylabel('Deslocamento')
 
 alpha_max = alpha_max(count,1);
 
 figure()
 plot(count,alpha_max,'k')
-xlabel('Itera��es')
+xlabel('Iterações')
 ylabel('\alpha')
 
 nel_aux = nel_aux(count,1);
 figure()
 plot(count,nel_aux,'k')
-xlabel('Itera��es')
-ylabel('N�mero de elementos')
+xlabel('Iterações')
+ylabel('Número de elementos')
