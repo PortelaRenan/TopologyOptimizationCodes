@@ -1,11 +1,3 @@
-% UNIVERSIDADE ESTADUAL DE CAMPINAS
-% FACULDADE DE ENGENHARIA MECANICA
-% METODOS DE OTIMIZACAO TOPOLOGICA EVOLUCIONARIA - IM437 J
-% ATIVIDADE 7
-%
-% DIPL. -ENG RENAN MIRANDA PORTELA
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %% cleaning
 
 clc; clear; close all
