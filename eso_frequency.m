@@ -1,11 +1,3 @@
-% @university: UNIVERSIDADE ESTADUAL DE CAMPINAS
-% @school: FACULDADE DE ENGENHARIA MECANICA
-% @module: METODOS DE OTIMIZACAO TOPOLOGICA EVOLUCIONARIA - IM437 J
-% @activity: ATIVIDADE 4
-%
-% @author: DIPL. -ENG RENAN MIRANDA PORTELA
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %% cleaning
 
 clc; clear; close all
@@ -50,7 +42,7 @@ end
 figure()
 patch('Faces',inci(:,2:5),'Vertices',coord(:,2:3),'FaceColor','blue')
 axis equal
-title('Otimização Topológica Evolucionária')
+title('OtimizaÃ§Ã£o TopolÃ³gica EvolucionÃ¡ria')
 ylabel('y')
 xlabel('x')
 % chr = int2str(coord(:,1));
@@ -85,7 +77,7 @@ end
 
 %% material matrix
             %E    rho  nu
-material = [200e9 7000 0.3;  %steel [Pa] [kg/m³] []
+material = [200e9 7000 0.3;  %steel [Pa] [kg/mÂ³] []
             70e9 2700 0.27]; %aluminium
         
 %% solver
